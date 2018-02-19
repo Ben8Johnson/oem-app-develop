@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/ll_horn"
+        android:orientation="vertical"
+        android:clickable="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/ll_bg_ignition"
+            android:orientation="horizontal"
+            android:paddingTop="@dimen/ll_ignition_control"
+            android:weightSum="1">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="24dp"
+                android:layout_weight="0.5"
+                android:text="@string/tv_ignition_control"
+                android:textColor="@color/tv_ignition_title"
+                android:textSize="@dimen/tv_ignition_control" />
+
+            <Switch
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="24dp"
+                android:layout_weight="0.5" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/ll_bg_door_locks"
+            android:orientation="horizontal"
+            android:weightSum="1">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="24dp"
+                android:layout_weight="0.5"
+                android:text="@string/tv_door_locks"
+                android:textColor="@color/tv_door_locks_title"
+                android:textSize="@dimen/tv_door_control" />
+
+            <Switch
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="24dp"
+                android:layout_weight="0.5" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/ll_climate_bg"
+            android:gravity="center_vertical"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="1">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="24dp"
+                    android:layout_weight="0.5"
+                    android:text="@string/tv_climate"
+                    android:textColor="@color/tv_climate"
+                    android:textSize="@dimen/tv_climate_control" />
+
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="1dp"
+                    android:layout_weight="0.3" />
+
+                <ImageView
+                    android:layout_width="0dp"
+                    android:layout_height="32dp"
+                    android:layout_margin="24dp"
+                    android:layout_weight="0.2"
+                    android:src="@drawable/img_climate" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="1">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="24dp"
+                    android:layout_weight="0.5"
+                    android:text="@string/tv_ac"
+                    android:textColor="@color/tv_climate"
+                    android:textSize="@dimen/tv_ac_control" />
+
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="1dp"
+                    android:layout_weight="0.3" />
+
+                <Switch
+                    android:layout_width="0dp"
+                    android:layout_height="32dp"
+                    android:layout_marginRight="24dp"
+                    android:layout_weight="0.2" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/ll_lights"
+            android:orientation="horizontal"
+            android:weightSum="1">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="24dp"
+                android:layout_weight="0.5"
+                android:text="@string/tv_lights"
+                android:textColor="@color/tv_lights"
+                android:textSize="@dimen/tv_lights_control" />
+
+            <Switch
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="24dp"
+                android:layout_weight="0.5" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/ll_horn"
+            android:orientation="horizontal"
+            android:weightSum="1">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="24dp"
+                android:layout_weight="0.5"
+                android:text="@string/tv_horn"
+                android:textColor="@color/tv_horn"
+                android:textSize="@dimen/tv_horn_control" />
+
+            <Button
+                style="@style/TextButton"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_margin="24dp"
+                android:layout_weight="0.5"
+                android:text="@string/btn_horn" />
+
+        </LinearLayout>
+    </LinearLayout>
+
+</layout>

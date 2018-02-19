@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_gradient"
+    android:padding="48dp">
+
+
+    <TextView
+        android:id="@+id/tv_auto_speed"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:text="@string/tv_auto_speed"
+        android:textColor="@color/tv_auto_speed"
+        android:textSize="@dimen/tv_auto_speed"
+        android:textStyle="bold" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_toRightOf="@+id/tv_auto_speed"
+        android:paddingLeft="@dimen/tv_auto_speed_unit_padding"
+        android:paddingTop="@dimen/tv_auto_speed_unit_padding"
+        android:text="@string/tv_auto_speed_unit"
+        android:textColor="@color/tv_auto_speed_unit"
+        android:textSize="@dimen/tv_auto_speed_unit"
+        android:textStyle="bold" />
+</RelativeLayout>
+
+

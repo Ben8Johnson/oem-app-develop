@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+        <import type="android.view.View" />
+
+        <variable
+            name="resultItem"
+            type="com.wejo.oemapp.model.ResultsItem" />
+    </data>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="1">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.7"
+                android:orientation="vertical"
+                android:padding="4dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/tv_place_name_padding"
+                    android:text="@{resultItem.name}"
+                    android:textColor="@color/tv_place_name"
+                    android:textSize="@dimen/tv_place_name"
+                    tools:text="Tesco" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/tv_place_location_padding"
+                    android:text="@{resultItem.rating + &quot; Stars&quot;}"
+                    android:textColor="@color/tv_place_location"
+                    android:textSize="@dimen/tv_place_location"
+                    tools:text="26 Beetroot avenue" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.3"
+                android:orientation="horizontal"
+                android:padding="4dp"
+                android:gravity="right">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/tv_place_distance"
+                    android:text="@{resultItem.openingHours.openNow ? &quot;Open now&quot; : &quot;Currently closed&quot; }"
+                    android:textColor="@color/tv_place_distance"
+                    android:textSize="@dimen/tv_place_distance"
+                    tools:text="5mi" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#d9d9d9" />
+    </LinearLayout>
+</layout>

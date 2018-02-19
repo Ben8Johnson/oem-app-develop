@@ -1,0 +1,51 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.wejo.oemapp.fragments.fnol.FnolDetailsFragment">
+
+    <EditText
+        android:id="@+id/edDescription"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_margin="10dp"
+        android:hint="@string/tv_details_description_hint"
+        android:imeOptions="actionDone"
+        android:inputType="textMultiLine"
+        android:minLines="8"
+        android:scrollbars="vertical" />
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/btnLaunchCamera"
+        style="@style/FloatingImageButton"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/edDescription"
+        android:src="@drawable/ic_btn_add_photo"
+        app:backgroundTint="@color/colorSecondary"
+        app:elevation="4dp" />
+
+    <com.wejo.oemapp.view.PhotoGridView
+        android:id="@+id/fnolImages"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/btnContinue"
+        android:layout_below="@id/edDescription" />
+
+    <Button
+        android:id="@+id/btnContinue"
+        style="@style/TextButton"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:text="@string/button_continue" />
+
+    <Button
+        android:id="@+id/btnCancel"
+        style="@style/TextButton"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:text="@string/button_cancel" />
+
+</RelativeLayout>

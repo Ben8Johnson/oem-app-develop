@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#054084</color>
+    <color name="colorSecondary">#01A3DB</color>
+    <color name="colorAccent">#ffff</color>
+    <color name="colorSecondaryMaterial">#FF039BE5</color>
+
+    <!-- POI fragment -->
+    <color name="tv_place_name">#000</color>
+    <color name="tv_place_location">#000</color>
+    <color name="tv_place_distance">#000</color>
+    <color name="toolbar">#00000000</color>
+
+    <!-- my details fragment -->
+    <color name="bg_car_details">#80054084</color>
+    <color name="primary_text">#000</color>
+
+    <!-- Car control fragment -->
+    <color name="ll_bg_ignition">#42A5F5</color>
+    <color name="ll_bg_door_locks">#2196F3</color>
+    <color name="tv_ignition_title">#fff</color>
+    <color name="tv_door_locks_title">#fff</color>
+    <color name="ll_climate_bg">#1E88E5</color>
+    <color name="tv_climate">#fff</color>
+    <color name="ll_lights">#1976D2</color>
+    <color name="ll_horn">#1565C0</color>
+    <color name="tv_lights">#fff</color>
+    <color name="tv_horn">#fff</color>
+
+    <!-- Dashboard fragment -->
+
+    <color name="divider_bg">#d9d9d9</color>
+    <color name="tv_dashboard_speed_title">#01A3DB</color>
+    <color name="tv_dashboard_speed">#fff</color>
+    <color name="tv_roadside_assistance">#000</color>
+
+    <color name="fuel_level">#01A3DB</color>
+    <color name="tv_auto_speed">#fff</color>
+    <color name="tv_auto_speed_unit">#42A5F5</color>
+</resources>

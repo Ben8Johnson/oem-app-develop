@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingLeft="8dp"
+    android:paddingRight="8dp"
+    android:paddingTop="8dp">
+
+    <TextView
+        android:id="@+id/tv_message_in"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="40dp"
+        android:background="@drawable/message_in_bubble"
+        android:padding="8dp"
+        android:textColor="#fff"
+        android:textSize="16sp"
+        android:visibility="gone"
+        tools:text="Youve crashed your car \n sucks to be you" />
+
+    <TextView
+        android:id="@+id/tv_message_out"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_marginLeft="40dp"
+        android:background="@drawable/message_out_bubble"
+        android:padding="8dp"
+        android:textColor="#fff"
+        android:textSize="16sp"
+        android:visibility="gone"
+        tools:text="Youve crashed your car \n sucks to be you" />
+
+    <ImageView
+        android:id="@+id/tv_image_out"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:background="@drawable/message_out_bubble"
+        android:maxHeight="200dp"
+        android:maxWidth="200dp"
+        android:padding="8dp"
+        android:visibility="gone" />
+</RelativeLayout>

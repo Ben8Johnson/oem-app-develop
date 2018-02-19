@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#fff"
+    android:layoutDirection="rtl"
+    android:orientation="horizontal"
+    android:padding="16dp">
+
+    <ImageButton
+        android:id="@+id/btn_send"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:background="@drawable/btn_send_bg"
+        android:padding="16dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/ic_send" />
+
+    <EditText
+        android:id="@+id/tv_message_out"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginRight="8dp"
+        android:background="@drawable/message_out_bubble"
+        android:gravity="left"
+        android:padding="8dp"
+        android:textColor="#fff"
+        android:textSize="16sp"
+        tools:text="Youve crashed your car \n sucks to be you" />
+</LinearLayout>

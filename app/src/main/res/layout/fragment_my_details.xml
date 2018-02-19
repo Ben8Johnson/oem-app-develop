@@ -1,0 +1,208 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="bottom"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/img_details_hero"
+                    android:elevation="20dp"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/img_car_showcase" />
+
+
+
+                <TextView
+                    android:id="@+id/tv_car_model"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="16dp"
+                    android:elevation="20dp"
+                    android:text="@string/tv_car_model"
+                    android:textColor="#fff"
+                    android:textSize="24sp" />
+
+                <TextView
+                    android:id="@+id/tv_car_reg"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/tv_car_model"
+                    android:layout_margin="16dp"
+                    android:elevation="20dp"
+                    android:text="@string/tv_car_reg"
+                    android:textColor="#fff"
+                    android:textSize="24sp" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="16dp">
+
+                <TextView
+                    android:id="@+id/tv_maintenance_tile"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/tv_maintenance_title"
+                    android:textColor="@color/primary_text"
+                    android:textSize="@dimen/tv_maintenance_title" />
+
+                <TextView
+                    android:id="@+id/tv_maintenance"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/tv_maintenance_tile"
+                    android:text="@string/tv_maintenance_body"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="@dimen/tv_maintenance_info" />
+
+
+                <ImageView
+                    android:layout_width="32dp"
+                    android:layout_height="32dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="16dp"
+                    android:src="@drawable/ic_info" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="16dp">
+
+                <TextView
+                    android:id="@+id/tv_car_location"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/tv_location_title"
+                    android:textColor="@color/primary_text"
+                    android:textSize="@dimen/tv_maintenance_title" />
+
+                <TextView
+                    android:id="@+id/tv_location"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/tv_car_location"
+                    android:text="@string/tv_location_body"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="@dimen/tv_maintenance_info" />
+
+
+                <ImageView
+                    android:layout_width="32dp"
+                    android:layout_height="32dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="16dp"
+                    android:src="@drawable/ic_info" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="16dp">
+
+                <TextView
+                    android:id="@+id/tv_car_fuel"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/tv_fuel_title"
+                    android:textColor="@color/primary_text"
+                    android:textSize="@dimen/tv_maintenance_title" />
+
+                <TextView
+                    android:id="@+id/tv_fuel"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/tv_car_fuel"
+                    android:text="@string/tv_fuel_body"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="@dimen/tv_maintenance_info" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="16dp">
+
+                <TextView
+                    android:id="@+id/tv_car_stats"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/tv_eco_statistics"
+                    android:textColor="@color/primary_text"
+                    android:textSize="@dimen/tv_maintenance_title" />
+
+                <TextView
+                    android:id="@+id/tv_fuel_consumption"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/tv_car_stats"
+                    android:text="@string/tv_eco_statistics_body"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="@dimen/tv_maintenance_info" />
+
+                <ImageView
+                    android:layout_width="32dp"
+                    android:layout_height="32dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="16dp"
+                    android:src="@drawable/ic_info" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rl_my_account"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="onMyProfileClicked"
+                android:padding="16dp">
+
+                <TextView
+                    android:id="@+id/tv_user_profile"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/tv_profile_title"
+                    android:textColor="@color/primary_text"
+                    android:textSize="@dimen/tv_profile_title" />
+
+                <TextView
+                    android:id="@+id/tv_profile_info"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/tv_user_profile"
+                    android:text="@string/tv_profile_body"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="@dimen/tv_profile_info" />
+
+
+                <ImageView
+                    android:layout_width="32dp"
+                    android:layout_height="32dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="16dp"
+                    android:src="@drawable/ic_account" />
+            </RelativeLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+</layout>

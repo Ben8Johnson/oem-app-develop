@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Wejo Cadillac</string>
+    <string name="menu_organise">Organise</string>
+    <string name="menu_car_control">Car Control</string>
+    <string name="menu_car_data">My Car</string>
+    <string name="menu_my_details">My Details</string>
+    <string name="menu_had_a_crash">Had a crash?</string>
+    <string name="menu_home">Home</string>
+    <string name="title_fnol">Your crash</string>
+    <string name="title_fnol_details">Details</string>
+    <string name="button_start_fnol_claim">Start Claim</string>
+    <string name="tv_getting_location">Getting location...</string>
+    <string name="dialog_accept_permission">In order for me to work correctly please accept all permissions</string>
+    <string name="dialog_ok">OK</string>
+    <string name="dialog_title_permissions">Permission</string>
+    <string name="label_your_current_location">"Your location is" </string>
+    <string name="tv_details_description_hint">Add some details and maybe some photos to help us with your incident</string>
+    <string name="button_continue">Continue</string>
+    <string name="button_submit">Submit</string>
+    <string name="tv_finished_questioning">Thank you for all of your co-operation with this issue. \nInformation about help and what to do next will be with you shortly. \nThanks the starlink team </string>
+    <string name="button_cancel">Cancel</string>
+    <string name="tv_submit_label">Please review and submit</string>
+    <string name="tv_submit_location_label">Location:</string>
+    <string name="tv_submit_description_label">Description:</string>
+    <string name="tv_submit_photos_label">Photos:</string>
+    <string name="btn_add_photo">Add photo</string>
+    <string name="latitude">"Latitude "</string>
+    <string name="longitude">"Longitude "</string>
+
+    <string name="tv_car_reg">MT17 JFJ</string>
+    <string name="tv_promo">F1 Track day experience</string>
+    <string name="tv_car_model">Cadillac XTS SEDAN</string>
+    <string name="tv_maintenance_title">Maintenance</string>
+    <string name="tv_maintenance_body">Everything looks good</string>
+    <string name="tv_location_title">Location</string>
+    <string name="tv_profile_title">My Profile</string>
+    <string name="tv_driver_title">Driver name</string>
+    <string name="tv_driver_number_title">Mobile number</string>
+    <string name="tv_car_title">Car name</string>
+    <string name="tv_location_body">Car is parked at home address</string>
+    <string name="tv_profile_body">Please ensure your profile is up to date</string>
+    <string name="tv_driver_name">Danny Zooko</string>
+    <string name="tv_driver_number">07123456789</string>
+    <string name="tv_car_name">Grease Lightning</string>
+    <string name="tv_car_vin">123456789</string>
+    <string name="tv_vin">Vin</string>
+    <string name="tv_fuel_title">Fuel level</string>
+    <string name="tv_fuel_body">Fuel level: 80% \nEstimate range 423 miles</string>
+    <string name="tv_eco_statistics">Eco driving statistics</string>
+    <string name="tv_eco_statistics_body">Avg fuel consumption: 63 mpg \nEco driving score 88/100</string>
+
+    <string name="tv_ignition_control">Ignition</string>
+    <string name="tv_door_locks">Door Locks</string>
+    <string name="btn_horn">Honk</string>
+    <string name="menu_local_info">Local Info</string>
+    <string name="tv_climate">Climate</string>
+    <string name="tv_ac">A/C</string>
+    <string name="tv_lights">Lights</string>
+    <string name="tv_horn">Horn</string>
+    <string name="snackbar_fnol_max_photos">You have reached the maximum number of photos</string>
+
+
+    <string name="tv_car_control">Car remote</string>
+    <string name="tv_rewards">My Cadillac Rewards</string>
+    <string name="tv_fnol">Had an accident?</string>
+    <string name="tv_fnol_opening_message">Welcome to cadillac accident help. We have noticed the location of the incodent is </string>
+    <string name="tv_assistance">Require roadside assistance?</string>
+    <string name="tv_assistance_description">Need roadside assistance? \n Press the call button below and quote the reference number so that we can get you help as soon as possible</string>
+    <string name="tv_assistance_reference">Ref : 32984729</string>
+
+    <string name="tv_dashboard_speed">30 mph</string>
+    <string name="tv_dashboard_range">187 miles</string>
+    <string name="tv_dashboard_temp">18°</string>
+    <string name="tv_dashboard_location">Chowley court \n CH39GA</string>
+    <string name="tv_now_playing">We Go Together - John Travolta, Olivi…</string>
+    <string name="tv_dashboard_speed_title">Current Speed</string>
+    <string name="tv_dashboard_range_title">Range</string>
+    <string name="dashboard_title">Dashboard</string>
+    <string name="details_title">My Details</string>
+    <string name="poi_title">POI</string>
+</resources>

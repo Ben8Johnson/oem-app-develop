@@ -1,0 +1,261 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <data>
+        <variable
+            name="viewModel"
+            type="com.wejo.oemapp.fragments.dashboard.DashboardViewModel"/></data>
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/hero_height"
+                android:layout_marginBottom="16dp"
+                android:background="@color/colorPrimary"
+                android:elevation="@dimen/hero_elevation">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/tv_dashboard_margin_title"
+                        android:layout_marginTop="@dimen/tv_dashboard_margin_title"
+                        android:text="@string/tv_dashboard_speed_title"
+                        android:textColor="@color/tv_dashboard_speed_title"
+                        android:textSize="@dimen/tv_dashboard_speed_title"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="@dimen/tv_dashboard_margin"
+                        android:layout_marginLeft="@dimen/tv_dashboard_margin"
+                        android:text="@string/tv_dashboard_speed"
+                        android:textColor="@color/tv_dashboard_speed"
+                        android:textSize="@dimen/tv_dashboard_speed"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/tv_dashboard_margin_title"
+                        android:text="@string/tv_dashboard_range_title"
+                        android:textColor="@color/tv_dashboard_speed_title"
+                        android:textSize="@dimen/tv_dashboard_speed_title"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/tv_dashboard_margin"
+                        android:text="@string/tv_dashboard_range"
+                        android:textColor="@color/tv_dashboard_speed"
+                        android:textSize="@dimen/tv_dashboard_speed"
+                        android:textStyle="bold" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="@dimen/tv_dashboard_margin"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_width="75dp"
+                        android:layout_height="75dp"
+                        android:src="@drawable/ic_cloud" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/tv_dashboard_temp"
+                        android:textColor="@color/tv_dashboard_speed"
+                        android:textSize="@dimen/tv_dashboard_speed"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:text="@string/tv_dashboard_location"
+                        android:textColor="@color/tv_dashboard_speed"
+                        android:textSize="@dimen/tv_dashboard_location"
+                        android:textStyle="bold" />
+                </LinearLayout>
+
+                <ImageView
+                    android:id="@+id/iv_play"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginBottom="16dp"
+                    android:layout_marginLeft="16dp"
+                    android:src="@drawable/ic_play_arrow" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginBottom="16dp"
+                    android:layout_toRightOf="@+id/iv_play"
+                    android:text="@string/tv_now_playing"
+                    android:textColor="@color/tv_dashboard_speed"
+                    android:textSize="@dimen/tv_dashboard_now_playing"
+                    android:textStyle="bold" />
+
+
+            </RelativeLayout>
+
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/car_control_margin"
+                android:elevation="@dimen/car_control_card_elevation"
+                android:onClick="onCarRemoteClicked">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="@dimen/ic_car_control"
+                        android:layout_height="@dimen/ic_car_control"
+                        android:layout_margin="@dimen/car_control_padding"
+                        android:background="@drawable/ic_remote" />
+
+                    <View
+                        android:layout_width="1dp"
+                        android:layout_height="match_parent"
+                        android:layout_margin="@dimen/car_control_padding"
+                        android:background="@color/divider_bg" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_margin="@dimen/car_control_padding"
+                        android:gravity="center"
+                        android:text="@string/tv_car_control"
+                        android:textSize="@dimen/car_control_text" />
+                </LinearLayout>
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/car_control_margin"
+                android:elevation="@dimen/car_control_card_elevation"
+                android:onClick="onMyRewardsClicked">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="@dimen/ic_car_control"
+                        android:layout_height="@dimen/ic_car_control"
+                        android:layout_margin="@dimen/car_control_padding"
+                        android:src="@drawable/ic_rewards" />
+
+                    <View
+                        android:layout_width="1dp"
+                        android:layout_height="match_parent"
+                        android:layout_margin="@dimen/btn_rewards_padding"
+                        android:background="@color/divider_bg" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_margin="@dimen/btn_rewards_padding"
+                        android:gravity="center"
+                        android:text="@string/tv_rewards"
+                        android:textSize="@dimen/tv_rewards" />
+                </LinearLayout>
+            </android.support.v7.widget.CardView>
+
+
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/car_control_margin"
+                android:elevation="@dimen/fnol_card_elevation"
+                android:onClick="onAccidentClicked">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="@dimen/ic_fnol"
+                        android:layout_height="@dimen/ic_fnol"
+                        android:layout_margin="@dimen/fnol_margin"
+                        android:background="@drawable/ic_fnol" />
+
+                    <View
+                        android:layout_width="1dp"
+                        android:layout_height="match_parent"
+                        android:layout_margin="@dimen/fnol_margin"
+                        android:background="@color/divider_bg" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_margin="@dimen/fnol_margin"
+                        android:gravity="center"
+                        android:text="@string/tv_fnol"
+                        android:textSize="@dimen/fnol_text" />
+                </LinearLayout>
+            </android.support.v7.widget.CardView>
+
+
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/car_control_margin"
+                android:elevation="@dimen/car_control_card_elevation"
+                android:onClick="onAssistanceClicked">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="@dimen/ic_car_control"
+                        android:layout_height="@dimen/ic_car_control"
+                        android:layout_margin="@dimen/car_control_padding"
+                        android:background="@drawable/ic_assistance" />
+
+                    <View
+                        android:layout_width="1dp"
+                        android:layout_height="match_parent"
+                        android:layout_margin="@dimen/car_control_padding"
+                        android:background="@color/divider_bg" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_margin="@dimen/car_control_padding"
+                        android:gravity="center"
+                        android:text="@string/tv_assistance"
+                        android:textSize="@dimen/car_control_text" />
+                </LinearLayout>
+            </android.support.v7.widget.CardView>
+        </LinearLayout>
+    </android.support.v4.widget.NestedScrollView>
+</layout>

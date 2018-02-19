@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <declare-styleable name="ButtonText">
+        <attr name="buttonName" format="string"/>
+        <attr name="buttonImage" format="integer"/>
+    </declare-styleable>
+
+</resources>

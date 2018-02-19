@@ -1,0 +1,62 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.wejo.oemapp.fragments.fnol.FnolSubmitFragment">
+
+    <LinearLayout
+        android:id="@+id/claim_details"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="40dp"
+        android:orientation="vertical">
+        <TextView
+            style="@style/TextLabelBold"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/tv_submit_location_label"/>
+        <TextView
+            android:id="@+id/tvLocation"
+            style="@style/TextLabel"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp" />
+        <TextView
+            style="@style/TextLabelBold"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/tv_submit_description_label"/>
+        <TextView
+            android:id="@+id/tvDescription"
+            style="@style/TextLabel"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp" />
+    </LinearLayout>
+
+    <com.wejo.oemapp.view.PhotoGridView
+        android:id="@+id/fnolImages"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/btnSubmit"
+        android:layout_below="@id/claim_details" />
+
+    <Button
+        android:id="@+id/btnSubmit"
+        style="@style/TextButton"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:text="@string/button_submit" />
+
+    <Button
+        android:id="@+id/btnCancel"
+        style="@style/TextButton"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:text="@string/button_cancel" />
+
+
+</RelativeLayout>

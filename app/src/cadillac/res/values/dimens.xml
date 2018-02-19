@@ -1,0 +1,64 @@
+<resources>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <dimen name="nav_header_vertical_spacing">12dp</dimen>
+    <dimen name="nav_header_height">176dp</dimen>
+    <dimen name="fab_margin">16dp</dimen>
+    <dimen name="hero_height">200dp</dimen>
+    <dimen name="hero_elevation">20dp</dimen>
+
+    <!-- POI Fragment -->
+    <dimen name="tv_place_name">16sp</dimen>
+    <dimen name="tv_place_location">16sp</dimen>
+    <dimen name="tv_place_distance">16sp</dimen>
+    <dimen name="tv_place_distance_padding">4dp</dimen>
+    <dimen name="tv_place_location_padding">4dp</dimen>
+    <dimen name="tv_place_name_padding">4dp</dimen>
+
+    <!-- my details -->
+    <dimen name="tv_maintenance_title">14sp</dimen>
+    <dimen name="tv_profile_title">14sp</dimen>
+    <dimen name="tv_driver_name_title">14sp</dimen>
+    <dimen name="tv_driver_number_title">14sp</dimen>
+    <dimen name="tv_car_vin">14sp</dimen>
+    <dimen name="tv_maintenance_info">18sp</dimen>
+    <dimen name="tv_profile_info">18sp</dimen>
+    <dimen name="img_details_hero">200dp</dimen>
+
+    <!-- Car control -->
+    <dimen name="tv_ignition_control">24sp</dimen>
+    <dimen name="tv_door_control">24sp</dimen>
+    <dimen name="ll_ignition_control">50dp</dimen>
+    <dimen name="tv_climate_control">24sp</dimen>
+    <dimen name="tv_ac_control">16sp</dimen>
+    <dimen name="tv_horn_control">24sp</dimen>
+    <dimen name="tv_lights_control">24sp</dimen>
+
+    <!-- Dashboard -->
+    <dimen name="car_control_card_elevation">10dp</dimen>
+    <dimen name="fnol_card_elevation">10dp</dimen>
+    <dimen name="ic_car_control">50dp</dimen>
+    <dimen name="ic_fnol">50dp</dimen>
+    <dimen name="car_control_padding">16dp</dimen>
+    <dimen name="btn_rewards_padding">16dp</dimen>
+    <dimen name="car_control_text">16sp</dimen>
+    <dimen name="tv_rewards">16sp</dimen>
+    <dimen name="fnol_text">16sp</dimen>
+    <dimen name="car_control_margin">16dp</dimen>
+    <dimen name="fnol_margin">16dp</dimen>
+    <dimen name="tv_dashboard_speed">24sp</dimen>
+    <dimen name="tv_dashboard_location">16sp</dimen>
+    <dimen name="tv_dashboard_now_playing">14sp</dimen>
+    <dimen name="tv_dashboard_speed_title">16sp</dimen>
+    <dimen name="tv_dashboard_margin">16dp</dimen>
+    <dimen name="tv_dashboard_margin_title">16dp</dimen>
+
+    <!-- Roadsidde assistance -->
+    <dimen name="tv_roadside_assistance">16sp</dimen>
+
+    <!-- auto activity -->
+    <dimen name="tv_auto_speed">48sp</dimen>
+    <dimen name="tv_auto_speed_unit">16sp</dimen>
+    <dimen name="tv_auto_speed_unit_padding">8dp</dimen>
+</resources>
